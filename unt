@@ -295,7 +295,7 @@ local function QHQXW_fake_script() -- Fill_3.LocalScript
 			local RelPos = MousePos-script.Parent.AbsolutePosition
 			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
 			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
-			game.Workspace.Gravity = Precent-250
+			game.Workspace.Gravity = Precent*250
 		end
 	end)
 	
